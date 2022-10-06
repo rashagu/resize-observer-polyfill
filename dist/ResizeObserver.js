@@ -44,7 +44,7 @@
                 get: function () {
                     return this.__entries__.length;
                 },
-                enumerable: true,
+                enumerable: false,
                 configurable: true
             });
             /**
@@ -634,7 +634,10 @@
         var rect = Object.create(Constr.prototype);
         // Rectangle's properties are not writable and non-enumerable.
         defineConfigurable(rect, {
-            x: x, y: y, width: width, height: height,
+            x: x,
+            y: y,
+            width: width,
+            height: height,
             top: y,
             right: x + width,
             bottom: height + y,

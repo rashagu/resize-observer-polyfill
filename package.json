@@ -1,7 +1,7 @@
 {
-    "name": "resize-observer-polyfill",
+    "name": "@kousum/resize-observer-polyfill",
     "author": "Denis Rul <que.etc@gmail.com>",
-    "version": "1.5.1",
+    "version": "1.5.2",
     "description": "A polyfill for the Resize Observer API",
     "main": "dist/ResizeObserver.js",
     "module": "dist/ResizeObserver.es.js",
@@ -15,7 +15,8 @@
         "test:spec:sauce": "karma start --sauce=windows && karma start --sauce=linux && karma start --sauce=osx",
         "test:spec:node": "npm run build && node tests/node/index.js",
         "test:spec:custom": "karma start --no-browsers",
-        "test:spec:native": "karma start --no-browsers --native"
+        "test:spec:native": "karma start --no-browsers --native",
+        "publish": "npm publish --access public"
     },
     "repository": {
         "type": "git",
@@ -59,6 +60,6 @@
         "promise-polyfill": "8.1.0",
         "rollup": "0.67.4",
         "rollup-plugin-typescript": "1.0.0",
-        "typescript": "3.2.2"
+        "typescript": "4.8.3"
     }
 }
